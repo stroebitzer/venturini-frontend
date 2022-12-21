@@ -1,0 +1,19 @@
+<div *ngIf="!authenticated">
+  <venturini-welcome></venturini-welcome>
+</div>
+
+<div *ngIf="authenticated">
+
+  <venturini-navbar> </venturini-navbar>
+
+  <venturini-sidenav></venturini-sidenav>
+
+  <mat-sidenav-container>
+    <mat-sidenav #sidenav mode="side">
+      <venturini-sidenav></venturini-sidenav>
+    </mat-sidenav>
+    <mat-sidenav-content>
+      <router-outlet> </router-outlet>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</div>
