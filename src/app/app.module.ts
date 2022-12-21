@@ -12,11 +12,15 @@ import { MatMenuModule } from "@angular/material/menu";
 import { MatSidenavModule } from "@angular/material/sidenav";
 import { MatToolbarModule } from "@angular/material/toolbar";
 
+import { QRCodeModule } from 'angularx-qrcode';
+
 import { HomeComponent } from './components/home/home.component';
 import { WelcomeComponent } from './components/welcome/welcome.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { SidenavComponent } from './components/sidenav/sidenav.component';
 import { QrCodeComponent } from './components/qr-code/qr-code.component';
+import { ClientsComponent } from './components/clients/clients.component';
+import { OrdersComponent } from './components/orders/orders.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +29,9 @@ import { QrCodeComponent } from './components/qr-code/qr-code.component';
     WelcomeComponent,
     NavbarComponent,
     SidenavComponent,
-    QrCodeComponent
+    QrCodeComponent,
+    ClientsComponent,
+    OrdersComponent
   ],
   imports: [
     BrowserModule,
@@ -36,7 +42,8 @@ import { QrCodeComponent } from './components/qr-code/qr-code.component';
     MatButtonModule,
     MatIconModule,
     MatListModule,
-    MatMenuModule
+    MatMenuModule,
+    QRCodeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

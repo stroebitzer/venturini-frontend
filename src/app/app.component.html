@@ -6,14 +6,16 @@
 
   <venturini-navbar> </venturini-navbar>
 
-  <venturini-sidenav></venturini-sidenav>
+  <div>
+    <!-- <mat-sidenav-container fullscreen> -->
+    <mat-sidenav-container>
+      <mat-sidenav #sidenav mode="side" opened>
+        <venturini-sidenav></venturini-sidenav>
+      </mat-sidenav>
+      <mat-sidenav-content class="content mat-elevation-z8">
+        <router-outlet> </router-outlet>
+      </mat-sidenav-content>
+    </mat-sidenav-container>
+  </div>
 
-  <mat-sidenav-container>
-    <mat-sidenav #sidenav mode="side">
-      <venturini-sidenav></venturini-sidenav>
-    </mat-sidenav>
-    <mat-sidenav-content>
-      <router-outlet> </router-outlet>
-    </mat-sidenav-content>
-  </mat-sidenav-container>
 </div>

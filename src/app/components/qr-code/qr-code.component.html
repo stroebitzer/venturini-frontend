@@ -1,1 +1,14 @@
 <p>qr-code works!</p>
+
+
+<button mat-fab extended color="primary">
+    <mat-icon>add</mat-icon>
+</button>
+<button mat-fab extended color="primary">
+    <mat-icon>print</mat-icon>
+</button>
+<button mat-fab extended color="primary">
+    <mat-icon>photo_camera</mat-icon>
+</button>
+
+<qrcode [qrdata]="'Your data string'" [width]="256" [errorCorrectionLevel]="'M'"></qrcode>
